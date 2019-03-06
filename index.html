@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="VaiaIthilnaur" content="">
+		<title>Zapakujloremipsum</title>
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav">
+          <div class="logo">
+              <img class="img-valign" src="img/gift-icon.png"/>
+              <span>Zapakujloremipsum.com</span>
+          </div>
+          <div class="list">
+            <ul>
+              <li><a id="contact" onclick="myFunction1()" href="#">KONTAKT</a></li>
+              <li><a id="services" onclick="myFunction2()" href="#">USŁUGI</a></li>
+              <li><a id="processes" onclick="myFunction3()" href="#">PROCESY</a></li>
+            </ul>
+        </div>
+
+      </nav>
+    </header>
+    <div class="twoColumns">
+      <div class="column">
+          <div class="lead-banner"></div>
+      </div>
+      <div class="column">
+        <div class="contact">
+  			     <h3>Napisz do mnie</h3>
+  		       <div class="contact-form">
+  			       <form method="post" action="sendEmail.php">
+  			        <input name="email" type="text" class="form-control float em" placeholder="  Email" required>
+                <input name="name" type="text" class="form-control float na" placeholder="  Imię" required>
+  			        <textarea name="message" class="form-control message" placeholder="Wiadomość" row="4" required></textarea>
+  				      <input type="submit" class="form-control submit" value="Napisz do mnie">
+  			       </form>
+  		       </div>
+        </div>
+      </div>
+    </div>
+    <div class="bottomSection">
+      <div class="heartOfGradient">
+        <h3>Dodaj swój email do bazy danych</h3>
+      </div>
+        <div class="contact-bottom">
+      		<div class="contact-form-bottom">
+      			<form method="post" action="sendEmail.php">
+      				<input type="text" class="form-control-bottom name" placeholder=" Imię" required>
+      				<input type="text" class="form-control-bottom email" placeholder=" E-mail" required>
+      				<input type="submit" class="form-control-bottom submit-bottom" value="Zapisz mnie">
+      			</form>
+      		</div>
+        </div>
+    </div>
+  </body>
+  <script>
+function myFunction1() {
+    document.getElementById("contact").setAttribute("style","font-weight: bold; border-bottom-color: #21B6FA;");
+    document.getElementById("services").setAttribute("style","border-bottom-color: none;");
+    document.getElementById("processes").setAttribute("style","border-bottom-color: none;");
+}
+function myFunction2() {
+    document.getElementById("services").setAttribute("style","font-weight: bold; border-bottom-color: #21B6FA;");
+    document.getElementById("contact").setAttribute("style","border-bottom-color: none;");
+    document.getElementById("processes").setAttribute("style","border-bottom-color: none;");
+}
+function myFunction3() {
+    document.getElementById("processes").setAttribute("style","font-weight: bold; border-bottom-color: #21B6FA;");
+    document.getElementById("services").setAttribute("style","border-bottom-color: none;");
+    document.getElementById("contact").setAttribute("style","border-bottom-color: none;");
+}
+</script>
+</html>
